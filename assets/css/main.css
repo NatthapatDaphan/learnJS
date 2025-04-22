@@ -15,6 +15,11 @@
 .hamburger-icon {
     display: inline-block;
     cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+        
+    }
   }
   
   .bar1, .bar2, .bar3 {
@@ -65,6 +70,29 @@ nav {
                     text-decoration: none;
                 }
             }
+
+
+            /* add media */
+            @media screen and (max-width: 768px){
+                display: none;
+            }
+        }
+    }
+
+    /* mobile menu */
+    .mobile-Menu{
+        display: none;
+        list-style: none;
+        li{
+            margin: 2rem 0;
+            a{
+                color: #FFF;
+                text-decoration: none;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            display: none;
         }
     }
 }
